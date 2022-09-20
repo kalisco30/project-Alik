@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    background-image: url("images/Rectangle\ 1.jpg");
+    background-size:cover;
+    padding:25px;
+    height:1000px;
+    flex-direction: column;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(215, 155, 26);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 2rem;
+    color: #fff;
+}
+
+
+.yellowtext {
+    color: rgb(215, 155, 26);
+}
+
+.innertext {
+    text-align: center;
+    color: white;
+    height:700px;
+    padding:100px 0;
+    font-size: 3rem;
+}
+
+.highlighted {
+    display:inline-block;
+    padding:0.1em 0.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.05em solid rgb(215, 155, 26);
+    border-radius:1em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:rgb(215, 155, 26);
+    transition: all 0.2s;
+    font-size: 2rem;
+}
+
+.bold {
+    display:inline-block;
+    padding:0.1em 0.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.05em solid rgb(215, 155, 26);
+    border-radius:1em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:black;
+    transition: all 0.2s;
+    font-size: 2rem;
+    background-color: rgb(215, 155, 26);
+}
