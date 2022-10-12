@@ -5,21 +5,30 @@
 body {
     background-color: white;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
     background-image: url("images/Rectangle\ 1.jpg");
+    min-height:150vh;
+    width: 100%;
+    background-position: center;
     background-size:cover;
-    padding:25px;
-    height:1000px;
-    flex-direction: column;
-    
+    position: relative; 
 }
 
+/* -------navigation bar------- */
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
     color: rgb(215, 155, 26);
+}
+
+nav.logo{
+    width:50px;
+    height:50px;
 }
 
 nav ul{
@@ -40,12 +49,25 @@ nav li a {
     color: rgb(215, 155, 26);
 }
 
+
+/* --------Introduction--------- */
 .innertext {
     text-align: center;
     color: white;
     height:700px;
     padding:100px 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
+}
+
+.medialogos{
+    text-align: center;
+    padding:1em;
+}
+
+.medialogos a{
+    text-decoration: none; 
+    color: #fff;
+    padding:1em;
 }
 
 .highlighted {
@@ -73,4 +95,191 @@ nav li a {
     transition: all 0.2s;
     font-size: 2rem;
     background-color: rgb(215, 155, 26);
+}
+
+/* --------About me--------- */
+#innercontainer {
+    margin: 5em;
+}
+
+#about-me {
+    width:55%;
+    margin-right:2%;
+    float: left;
+}
+
+#about-me-img {
+    height: 400px;
+    width: 400px;
+}
+
+#text-aboutme {
+    font-size:1.2em;
+    width:42%;
+    float: right;
+    margin:-420px 80px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* -------My Amazing Services ---------*/
+#services {
+    margin-top:150px;
+}
+
+#services h2{
+    font-size:2em;
+}
+
+.container {
+    display: flex;
+    justify-content:space-between;
+}
+
+.card-container {
+    margin-top: 60px;
+    padding: 2em;
+    width: 350px;
+    height: 300px;
+    background: #FFF;
+    display: inline-block;
+    box-shadow: 0px 1px 10px 1px rgb(204, 202, 202);
+}
+
+.image-container{
+    background: rgb(249, 171, 4);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: auto;
+}
+
+.image-container img{
+    width:50px;
+    height: 50px;
+    
+}
+
+
+/* -----Services Tabs----- */
+.tabs{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.tabs ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.projects-img{
+    justify-content:space-evenly;
+}
+
+.projects-img img{
+    width: 450px;
+    height: 300px;
+    padding:0.5em;
+}
+
+#btn-seemore{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ------Hire For Awesome Projects------ */
+#small-rectangle{
+    background-color:rgb(183, 183, 183);
+    height: 150px;
+    width:100%;
+}
+
+#btn-smallrectangle{
+    float: right;
+    margin: -50px 200px;
+}
+
+.smallrectangle-text{
+    margin:5em;
+}
+
+/* ------Contacts & Messages------- */
+footer {
+    background-color:black;
+    color:#FFF;
+    margin-top: -22px;
+    margin-bottom:-22px;
+}
+
+#big-rectangle{
+    margin:5em;
+    margin-top: -22px;
+    padding-top:20px;
+}
+
+#contact{
+    width:20%;
+    text-align: center;
+}
+
+.contact-info{
+   padding:5px;
+}
+
+#message{
+    float: right;
+    margin:-322px 300px;
+    width:40%;
+}
+
+form{
+    width:150%;
+    max-width:850px;
+}
+
+.input-group{
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:8px;
+    outline: 0;
+    border: 1px solid white;
+    color:#FFF;
+    background:transparent;
+    font-size:13px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group{
+    flex-basis: 48%;
+}
+
+
+button{
+    color:rgb(8, 8, 8);
+    display:inline-block;
+    background-color:rgb(249, 171, 4);
+    padding:0.5em;
+    text-decoration:none;
+    border-radius:0.4em;
+    border:none;
+    cursor: pointer;
+}
+
+#copyright {
+    text-align: center;
 }

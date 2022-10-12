@@ -7,13 +7,16 @@
         <meta name="keywords" content="HTML,CSS,JavaScript">
         <meta name="author" content="Adeshola Khaliid">
         <title>Alik</title>
-        <link rel=”stylesheet” type="text/css" href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css”>
-        <link rel="stylesheet" href="styles.css">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">  
+        <script src="https://kit.fontawesome.com/0a16f3b373.js" crossorigin="anonymous"></script>  
         <script src="index.js"></script>
     </head>
     <body>
         <header>
-            <nav class="container">
+            <nav>
                 <!-- didn't position the name beside the logo as shown in the portfolio image. -->
                 <div class="logo"><img src="images/logo.png"/>ALIK DESIGNS</div>
                 <ul>
@@ -31,97 +34,109 @@
                 <a class="highlighted" href="#">Contact me</a>
                 <a class="bold" href="#">Download Cv</a>
             </div>
-            <!-- social media logos should be here, check portfolio image. -->
+            <div class="medialogos">
+                <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
         </header>
         
         <div id="innercontainer">
-            <h2><u>About me</u></h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia deserunt, quasi temporibus veniam beatae est quam maiores aliquam quae, ea, possimus delectus. Deserunt officiis suscipit reprehenderit soluta illum voluptate.
-            </p>
-            <button class="#">Hire me</button>
-
+            <div id="about-me">
+                <img src="images/about me.jpg" id="about-me-img">          
+            </div>
+            <div id="text-aboutme">  
+                <h2><u>About me</u></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum quibusdam nihil sed rerum consequatur facere exercitationem, minus iure aut deserunt vero ipsum unde, pariatur, dolorem cum quis eum non voluptatibus debitis fuga. Veniam consectetur cum modi quos et provident quia dolorum error ex iusto assumenda qui necessitatibus, atque voluptatum voluptatibus reprehenderit dignissimos cupiditate ullam dolorem? Expedita quisquam sunt odit quo soluta ratione ipsa necessitatibus similique cum quaerat?
+                </p>
+                <button class="#">Hire me</button>
+            </div>
+            <div class="clearfix"></div>    
             <div id="services">
                 <h2>My amazing Services</h2>
-                <div class="card-container">
-                    <div class="image-container">
-                        <img src="#"/>
+                <div class="container">
+                    <div class="card-container">
+                        <div class="image-container">
+                            <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>Brand Identity</h3>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis molestiae tempore saepe eaque modi, voluptatibus dolorum</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Brand Identity</h3>
+
+                    <div class="card-container">
+                        <div class="image-container">
+                            <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>UX Design</h3>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis molestiae tempore saepe eaque modi, voluptatibus dolorum</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis molestiae tempore saepe eaque modi, voluptatibus dolorum quibusdam odit atque, fuga culpa exercitationem harum accusamus fugit vero repellendus dicta nulla.</p>
+
+                    <div class="card-container">
+                        <div class="image-container">
+                            <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>UI Design</h3>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis molestiae tempore saepe eaque modi, voluptatibus dolorum</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card-container">
-                    <div class="image-container">
-                        <img src="#"/>
-                    </div>
-                    <div>
-                        <h3>UX Design</h3>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis molestiae tempore saepe eaque modi, voluptatibus dolorum quibusdam odit atque, fuga culpa exercitationem harum accusamus fugit vero repellendus dicta nulla.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="image-container">
-                        <img src="#"/>
-                    </div>
-                    <div>
-                        <h3>UI Design</h3>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis molestiae tempore saepe eaque modi, voluptatibus dolorum quibusdam odit atque, fuga culpa exercitationem harum accusamus fugit vero repellendus dicta nulla.</p>
-                    </div>
-                </div>
-
-                <div>
+            </div>
+            <div>
+                <div class="tabs">
                     <ul>
-                        <li>All</li>
-                        <li>UI Design</li>
-                        <li>UX Design</li>
-                        <li>Brand Identity</li>
+                        <li><b>All</b></li>
+                        <li><b>UI Design</b></li>
+                        <li><b>UX Design</b></li>
+                        <li><b>Brand Identity</b></li>
                     </ul>
                 </div>
 
-                <div>
-                    <img src="#"/>
-                    <img src="#"/>
-                    <img src="#"/>
-                    <img src="#"/>
-                    <img src="#"/>
-                    <img src="#"/>
+                <div class="projects-img">
+                    <a href="#"><img src="images/Frame 1 (2).jpg"/></a>
+                    <a href="#"><img src="images/flight.jpg"/></a>
+                    <a href="#"><img src="images/MacBook Pro 16_ - 3.jpg"/></a>
+                    <a href="#"><img src="images/Project Title-1.jpg"/></a>
+                    <a href="#"><img src="images/FINAL AGRO SHOP.jpg"/></a>
+                    <a href="#"><img src="images/july.jpg"/></a>
+                    
                 </div>
 
-                <div>
+                <div id="btn-seemore">
                     <button>See more</button>
                 </div>
             </div>
         </div>
 
-        <footer>
-            <div id="small-rectangle">
-                <div>
-                    <h3>Hire Me For Your Awesome Projects</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptate, distinctio ullam officiis delectus illum accusamus. Cumque ipsum error expedita eum vitae porro! Blanditiis, rerum aspernatur! Porro minima beatae at.</p>
-                    <button>Hire me</button>
-                </div>
+        <div id="small-rectangle">
+            <div class="smallrectangle-text">
+                <h3>Hire Me For Your Awesome Projects</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptate, distinctio<br> ullam officiis delectus illum accusamus.</p>
+                <button id="btn-smallrectangle">Hire me</button>
             </div>
-
+        </div>
+        <footer>
             <div id="big-rectangle">
+                <h4>Contact info</h4>
                 <div id="contact"> 
-                    <h4>Contact info</h4>
-                    <div class="mail">
-                        <img src="#">
+                    <div class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
                         <p>ibrahimaramide96@gmail.com</p>
                         <p>Alikidam96@gmail.com</p>
                     </div>
-                    <div class="phone">
-                        <img src="#">
+                    <div class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
                         <p>+2349069604287</p>
                         <p>+2349154994699</p>
                     </div>
@@ -129,17 +144,26 @@
                 
                 <div id="message">
                     <h4>Send Your Message</h4>
-                    <div>
-                        <input type="text" id="names" placeholder="Name">
-                        <input type="number" id="number" placeholder="Phone No" >
-                    </div>
-                    <div>
-                        <textarea id="comment" placeholder="Your Message" rows="5" cols="44"></textarea>
-                        <button>Send message</button>
-                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="text" id="names" placeholder="Name">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="number" placeholder="Phone No" >
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <textarea id="comment" placeholder="Your Message" rows="5" ></textarea>
+                        </div>
+                    </form>
+                    <button>Send message</button>
                 </div>
             </div>
-            <p>&#9426 Copyright 2022. All rights reserved</p>
+            <div id="copyright">
+                <p>&#9426 Copyright 2022. All rights reserved</p>
+            </div>
         </footer>
     </body>
 </html>
